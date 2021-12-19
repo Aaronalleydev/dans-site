@@ -1,8 +1,9 @@
 <template>
-  <div id="nav">
+  <div id="nav" class="justify-center flex bg-yellow-300 items-center h-screen">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
+  
   <router-view />
 </template>
 
