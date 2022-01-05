@@ -1,11 +1,16 @@
 <template>
-  <div id="nav" class="justify-center flex bg-yellow-300 items-center h-screen">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+    <TopNav />
   
   <router-view />
 </template>
+
+<script>
+import TopNav from './components/TopNav.vue'
+export default {
+  components: { TopNav }
+}
+</script>
+
 
 <style>
 #app {
