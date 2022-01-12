@@ -1,25 +1,49 @@
 <template>
-<nav class="bg-red-100 border-red-200 px-2">
-  <div class="container mx-auto flex flex-wrap items-center justify-between">
-      <router-link class="" to="/">
-      <span>Alley strength and nutrition</span>
-      </router-link>
-  <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
-    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
-      <li><router-link class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0" to="/">Home</router-link></li>
-      <li><router-link class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0" to="/about">About</router-link></li>
-    </ul>
+<nav class="flex items center bg-red-300 p-3 flex-wrap">
+  <router-link to="/" class="p-2 mr-4 inline-flex items-center">
+  <img src="../assets/logo.png" alt="" class="w-12 h-12">
+  <span class="md:text-xl text-red-900 font-bold uppercase tracing-wide">Alley S + N</span>
+  </router-link>
+  <button @click="menuOpen" class="text-red-900 inline-flex items-center p-3 roundeed lg:hidden ml-auto">
+    <span class="material-icons">menu</span>
+  </button>
+  <div :class="{toggleNav: open}" class="top-nav w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+    <div class="lg:inline-flex lg:flex-row lg:ml-auto">
+      <ul class="flex flex-col lg:flex-row">
+        <li v-for="link in links" :key="link">
+          <router-link class="lg:inline-flex lg:w-auto px-3 py-5 lg:text-2xl rounded text-red-900 uppercase font-bold hover:text-white" :to="link.link">{{ link.name }}</router-link></li>
+      </ul>
     </div>
   </div>
 </nav>
 </template>
 
 <script>
+import { ref } from '@vue/reactivity'
 export default {
+  setup() {
+    let open = ref(true)
+    let links = [
+      {name: 'Home', link: '/'},
+      {name: 'About', link: '/about'},
+      {name: 'Contact', link: '/contact'},
+    ]
 
+    const menuOpen = () => {
+      open.value = !open.value
+    }
+
+    return { links, open, menuOpen }
+  }
 }
 </script>
 
 <style>
+/* li .router-link-active {
+  border-bottom: 1px solid black;
+} */
 
+.toggleNav {
+  display: none;
+} 
 </style>
