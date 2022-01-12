@@ -1,15 +1,16 @@
 <template>
   <div class="home">
-    <h1>This is the home page</h1>
+    <HeroSection />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import HeroSection from '../components/HeroSection.vue'
 
 
 export default {
   name: "Home",
-  components: {},
+  components: { HeroSection },
 };
 </script>
