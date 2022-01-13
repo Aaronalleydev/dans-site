@@ -8,7 +8,7 @@
     <p>Super catchy tag line</p>
   </div>
   <div class="flex justify-center items-center">
-    <button class="bg-indigo-700 text-4xl p-3 rounded-full">Call to action</button>
+    <button class="bg-indigo-700 text-4xl p-3 rounded-full text-red-700 font-bold uppercase">Call to action</button>
   </div>
 </div>
 </template>
