@@ -1,5 +1,5 @@
 <template>
-<div class="wrapper bg-red-100">
+<div class="wrapper">
 
     <TopNav />
   <router-view />

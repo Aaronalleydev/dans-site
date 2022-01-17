@@ -1,7 +1,7 @@
 <template>
-  <div class="card bg-red-200 flex flex-col items-center shadow-2xl m-2 text-gray-900">
+  <div class="card bg-red-100 flex flex-col items-center shadow-2xl m-2 text-gray-900">
     <div class="w-full h-1/3 rounded-lg shadow-lg">
-      <img class="w-full h-full rounded-t-lg" :src="card.img" alt="">
+      <img class="w-full rounded-t-lg" :src="card.img" alt="">
     </div>
     <div>
     <h3 class="text-3xl text-red-900 text-center font-bold capitalize pt-4">{{ card.title }}</h3>

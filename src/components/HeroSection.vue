@@ -1,9 +1,9 @@
 <template>
-<div class="w-full bg-center bg-cover h-96 bgImg">
+<div class="w-full bg-center bg-cover h-screen bgImg">
         <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50">
             <div class="text-center bg-gray-900 p-6 bg-opacity-50">
                 <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl">Personal Training, Sports and <span class="text-red-500 underline">Nutrition Coach</span></h1>
-                <h2 class="md:text-xl font-semibold text-white uppercase lg:text-2xl pt-4">One to One personalised coaching to take you to the next level</h2>
+                <h2 class="md:text-xl font-semibold text-white lg:text-2xl pt-4">One to One personalised coaching to take you to the next level</h2>
                 <router-link :to="{ name: 'Contact'}">
                 <button class="w-full px-4 py-2 mt-4 text-sm md:text-lg font-medium text-white uppercase transition-colors duration-200 transform bg-red-600 rounded-md lg:w-auto hover:bg-red-500 focus:outline-none focus:bg-red-500">Get Started</button>
                 </router-link>
