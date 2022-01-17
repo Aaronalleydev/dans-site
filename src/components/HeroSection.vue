@@ -1,5 +1,5 @@
 <template>
-<div class="grid grid-cols-2 grid-rows-2 max-w-screen-2xl m-auto bg-red-100">
+<div class="grid grid-cols-2 grid-rows-2 max-w-screen-2xl m-auto bg-pink-100 shadow-lg rounded">
   <div class="row-span-2">
     <img class="" src="../assets/img/AlleyLogoClear.png" alt="A picture of dan">
   </div>

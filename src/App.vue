@@ -1,31 +1,21 @@
 <template>
+<div class="wrapper bg-red-100">
+
     <TopNav />
   <router-view />
+    <Footer />
+  </div>
 </template>
 
 <script>
 import TopNav from './components/TopNav.vue'
+import Footer from './components/Footer.vue'
 export default {
-  components: { TopNav }
+  components: { TopNav, Footer }
 }
 </script>
 
 
 <style>
 
-body {
-  background-color: #F87171;
-}
-#app {
-  
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
