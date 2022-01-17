@@ -21,9 +21,10 @@ export default {
 <style>
 .bgImg {
   background-image: url('../assets/img/hero3.jpeg');
-  /* background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-size: cover;
   opacity: 0.8;
   height: 100%; */
 }
