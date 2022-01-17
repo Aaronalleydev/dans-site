@@ -2,7 +2,7 @@
 <nav class="flex items center bg-red-300 p-3 flex-wrap">
   <router-link to="/" class="p-2 mr-4 inline-flex items-center">
   <img src="../assets/img/AlleyLogoClear.png" alt="" class="md:w-36 h-24">
-  <p class="text-red-800 text-l sm:text-3xl font-bold">Alley strength and Nutrition</p>
+  <p class="text-red-800 text-l sm:text-3xl font-bold">Alley Strength and Nutrition</p>
   </router-link>
   <button @click="menuOpen" class="text-red-900 inline-flex items-center p-3 roundeed lg:hidden ml-auto">
     <span class="material-icons">menu</span>

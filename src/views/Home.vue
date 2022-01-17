@@ -34,11 +34,7 @@ export default {
       price: '£200', 
       who: ['Someone who wants to gain a deeper understanding of their nutrition and how it can help their goals. If your looking to set up habits that will last long term and not just a quick fix diet plan then this is for you'], 
       whatYouGet: ['7 step nutrition guide', '12 week bespoke nutrition plan', 'Sample meal plans - 2 per week for 6 weeks.', ' Daily/weekly/monthly habit tracking.', 'Daily/weekly/monthly habit tracking.']},
-      { img: require('../assets/img/food.jpeg'),
-        title: 'Nutrition e-book', 
-        price: '£49', 
-        who: ['You don\'t need a training plan but want to understand nutrition better and how to move your diet to the next level'], 
-        whatYouGet: ['The Book']},
+      
     ])
 
     return { cardsData }
