@@ -1,7 +1,5 @@
 <template>
-  <div class="card bg-gray-100 flex flex-col items-center shadow-2xl mt-12 text-gray-900">
-    <div class="w-full h-1/3 rounded-lg shadow-lg">
-    </div>
+  <div class="card bg-gray-100 flex flex-col items-center shadow-xl mt-12 text-gray-900">
     <div>
     <h3 class="text-3xl text-red-700 text-center font-bold capitalize pt-4">{{ card.title }}</h3>
     <h4 class="text-center text-lg font-bold text-gray-800 pt-4 border-b-2 border-gray-200 pb-4">{{ card.price}}</h4>

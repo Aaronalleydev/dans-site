@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .bgImg {
   background-image: url('../assets/img/hero3.jpeg');
   background-position: center;

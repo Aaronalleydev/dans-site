@@ -1,29 +1,13 @@
 <template>
-  <div class="home">
-    <HeroSection />
-    <AboutDan />
-    <ServiceCard :cardsData="cardsData" />
-    <Review />
-    <Socials />
-    <h1 class="text-2xl text-center py-6 text-red-600 font-bold">Ready to get started or want to find out more</h1>
-    <HomeContact />
-  </div>
+  <p>services go here</p>
+  <ServiceCard :cardsData="cardsData"/>
 </template>
 
 <script>
-// @ is an alias to /src
-import HeroSection from '../components/HeroSection.vue'
-import AboutDan from '../components/AboutDan.vue'
 import ServiceCard from '../components/ServiceCard.vue'
-import Review from '../components/Review.vue'
-import Socials from '../components/Socials.vue'
-import HomeContact from '../components/HomeContact.vue'
-import { ref } from '@vue/reactivity';
-
-
-export default {
-  name: "Home",
-  components: { HeroSection, AboutDan, ServiceCard, Review, Socials, HomeContact },
+const { ref }=require('@vue/reactivity')
+  export default {
+  components: { ServiceCard },
   setup() {
     const cardsData = ref([
       {
@@ -42,9 +26,9 @@ export default {
 
     return { cardsData }
   }
-};
+  }
 </script>
 
 <style>
-  
+
 </style>

@@ -1,10 +1,10 @@
 <template>
 <div class="">
   
-  <div class="flex flex-col lg:flex-row items-center bg-gray-200 m-6 rounded-xl mt-16">
+  <div class="flex flex-col lg:flex-row items-center  m-6 rounded-xl mt-16">
     <img src="../assets/img/fbHero.jpg" alt="" class="border rounded-xl w-full lg:w-2/3 h-96 object-fit">
     <div class="px-6 text-gray-800 text-lg">
-      <h1 class="text-4xl text-red-800 font-bold text-center text-pt-8 pb-6">About Dan</h1>
+      <h1 class="text-4xl text-red-800 font-bold text-center text-pt-8 pb-6 underline">About Dan</h1>
       <div class="pb-8">
         <p>A qualified personal trainer, registered nutritionist and boxing coach. I come from an endurance & combat sport background. </p>
         <p>Now working at one of the leading health clubs in Europe and with clients in the UK, Europe & North America. </p>

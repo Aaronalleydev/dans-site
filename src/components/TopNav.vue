@@ -26,6 +26,7 @@ export default {
     let links = [
       {name: 'Home', link: '/'},
       {name: 'About', link: '/about'},
+      {name: 'Services', link: '/services'},
       {name: 'Contact', link: '/contact'},
     ]
 
@@ -41,7 +42,7 @@ export default {
 <style>
 li .router-link-active {
   padding-bottom: 0;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid darkred;
   border-bottom-width: 90;
 }
 

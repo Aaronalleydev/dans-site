@@ -1,10 +1,11 @@
 <template>
-<div class="wrapper">
+
 
     <TopNav />
+    <div class="wrapper">
   <router-view />
-    <Footer />
   </div>
+    <Footer />
 </template>
 
 <script>
@@ -17,5 +18,7 @@ export default {
 
 
 <style>
-
+  /* .wrapper {
+    background-image: url('./assets/img/cool-background.png');
+  } */
 </style>
