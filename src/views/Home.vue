@@ -5,6 +5,7 @@
     <ServiceCard :cardsData="cardsData" />
     <Review />
     <Socials />
+    <HomeContact />
   </div>
 </template>
 
@@ -15,15 +16,16 @@ import AboutDan from '../components/AboutDan.vue'
 import ServiceCard from '../components/ServiceCard.vue'
 import Review from '../components/Review.vue'
 import Socials from '../components/Socials.vue'
+import HomeContact from '../components/HomeContact.vue'
 import { ref } from '@vue/reactivity';
 
 
 export default {
   name: "Home",
-  components: { HeroSection, AboutDan, ServiceCard, Review, Socials },
+  components: { HeroSection, AboutDan, ServiceCard, Review, Socials, HomeContact },
   setup() {
     const cardsData = ref([
-      { img: require('../assets/img/hero3.jpeg'),
+      {
         title: 'Training and nutrition plan', 
         price: '£99 monthly subscription', 
         who: ['If you have an understanding of the gym and want a customized program to follow to reach your goals. This plan will also help with your nutritional knowledge and goals', 'if you have sport specific goals and need a push in the right direction', 'Want a better understanding of different training methods and nutritional information.'], 

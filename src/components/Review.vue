@@ -6,6 +6,10 @@
     <vueper-slide v-for="(slide, i) in slides" :key="i" :title="slide.title" :content="slide.content" />
   </vueper-slides>
 </div>
+
+<div>
+  <h1 class="md:hidden text-center">Review section</h1>
+</div>
   
 </template>
 

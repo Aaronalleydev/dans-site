@@ -1,5 +1,5 @@
 <template>
-<nav class="flex items center bg-red-300 p-3 flex-wrap">
+<nav class="flex items center bg-sky-500 p-3 flex-wrap">
   <router-link to="/" class="p-2 mr-4 inline-flex items-center">
   <img src="../assets/img/AlleyLogoClear.png" alt="" class="md:w-36 h-24">
   <p class="hidden md:flex text-red-800 text-xs sm:text-3xl font-bold">Alley Strength and Nutrition</p>
@@ -11,7 +11,7 @@
     <div class="lg:inline-flex lg:flex-row lg:ml-auto">
       <ul class="flex flex-col lg:flex-row">
         <li v-for="link in links" :key="link">
-          <router-link class="lg:inline-flex lg:w-auto px-3 py-5 lg:text-2xl rounded text-red-900 uppercase font-bold hover:text-white" :to="link.link">{{ link.name }}</router-link></li>
+          <router-link class="lg:inline-flex lg:w-auto px-3 py-5 lg:text-2xl rounded text-red-900 uppercase font-bold hover:text-red-600" :to="link.link">{{ link.name }}</router-link></li>
       </ul>
     </div>
   </div>
