@@ -11,7 +11,7 @@ const { ref }=require('@vue/reactivity')
   setup() {
     const cardsData = ref([
       {
-        title: 'Training and nutrition plan', 
+        title: 'Online Training and Nutrition plan', 
         price: '£99 monthly subscription', 
         who: ['If you have an understanding of the gym and want a customized program to follow to reach your goals. This plan will also help with your nutritional knowledge and goals', 'if you have sport specific goals and need a push in the right direction', 'Want a better understanding of different training methods and nutritional information.'], 
         whatYouGet: ['Weekly Check-ins', 'Bespoke training program', 'Customized calories and macros to hit your goals', 'Free copy of my 7-step nutrition guide', 'Daily/weekly/monthly habit tracking.', 'Access to my training app - MyPTHub', 'Via the app - Workout logging, demonstration videos, nutrition tracking (I receive live updates)', 'Unlimited messaging support', 'Monthly review', 'Access to my nutrition platform (Extra cost)'],

@@ -9,7 +9,7 @@
       <router-link :to="{ name: 'About'}" class="mr-6">About</router-link>
       <router-link :to="{ name: 'Contact'}">Contact</router-link>
     </div>
-    <p class="text-xs pt-4">Created by <a href="#" class="text-blue-400">Alley Web Dev</a> for Alley Strength and nutrition</p>
+    <p class="text-xs pt-4 mr-4">Created by <a href="#" class="text-blue-400">Alley Web Dev</a> for Alley Strength and nutrition</p>
   </div>
   
 </template>
