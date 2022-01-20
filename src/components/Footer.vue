@@ -1,5 +1,5 @@
 <template>
-<div class="border border-2 flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between">
+<div class="border border-2 flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between mt-16 sm:mt-8">
     <router-link to="/" class="p-2 mr-4 inline-flex items-center">
     <img src="../assets/img/AlleyLogoClear.png" alt="" class="md:w-36 h-24">
     </router-link>

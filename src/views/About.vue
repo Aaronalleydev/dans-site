@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="w-full bg-center bg-cover h-screen bgImg">
-        <div class="flex items-end justify-center w-full h-full bg-gray-900 bg-opacity-50">
+        <div class="flex items-end justify-center w-full h-full">
             <div class="text-center bg-gray-900 p-6 bg-opacity-50">
                 <h1 class="text-2xl font-semibold text-white uppercase lg:text-3xl"><span class="text-red-500 underline">Dan Alley</span></h1>
                 <h2 class="md:text-xl font-semibold text-white lg:text-2xl pt-4">One to One personalised coaching to take you to the next level</h2>
@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .bgImg {
-  background-image: url('../assets/img/service2.jpeg');
+  background-image: url('../assets/img/about.jpeg');
   background-position: center;
   /* background-repeat: no-repeat;
   /* background-position: center; */

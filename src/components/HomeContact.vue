@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 grid md:grid-cols-2 w-4/5 m-auto rounded-lg sm:mb-28">
+  <div class="bg-gray-100 grid md:grid-cols-2 sm:w-4/5 m-auto rounded-lg sm:mb-28">
 
     <form ref="form" class="flex flex-col items-center py-6" @submit.prevent="sendEmail">
     <h2 class="text-red-600 text-center text-xl py-6">Get in touch</h2>
@@ -15,8 +15,9 @@
     </form>
     <div class="flex flex-col items-center justify-center">
     <h1 class=" pb-6 md:pb-20 text-xl text-red-600">Or contact:</h1>
-    <p class="flex pb-6"><span class="pi pi-phone px-4 text-red-600" style="font-size: 2rem;" ></span> 07818717323</p>
-    <p class="flex text-blue-700"><span class="pi pi-at px-4 pb-8" style="font-size: 2rem; color: red;" ></span><a href="mailto:dan@alleystrengthandnutrition.com">dan@alleystrengthandnutrition.com</a></p>
+    <p class="flex pb-6"><span class="pi pi-phone px-2 md:px-4 text-red-600" style="font-size: 2rem;" ></span> 07818717323</p>
+
+    <p class="flex text-blue-700"><span class="pi pi-at px-4 pb-8 text-xl md:text-3xl text-red-600 pt-1 md:pt-0" style=";" ></span><a href="mailto:dan@alleystrengthandnutrition.com">dan@alleystrengthandnutrition.com</a></p>
     </div>
   </div>
           
