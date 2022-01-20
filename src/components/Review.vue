@@ -1,6 +1,6 @@
 <template>
 <div class="">
-  <h1 class="text-center text-3xl text-red-600 py-16">Still not convinced, check out what my clients are saying...</h1>
+  <h1 class="text-center text-3xl text-red-600 py-16 px-2">Still not convinced, check out what my clients are saying...</h1>
 
   <div class="grid md:grid-cols-3 md:m-6 md:p-6 text-gray-800">
     <div class="pb-6" v-for="review in reviews" :key="review.id">
