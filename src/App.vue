@@ -2,9 +2,11 @@
 
 
     <TopNav />
-    <div class="wrapper">
-  <router-view />
-  </div>
+    
+  <router-view > 
+    
+  </router-view>
+ 
     <Footer />
 </template>
 
@@ -18,7 +20,22 @@ export default {
 
 
 <style>
-  /* .wrapper {
-    background-image: url('./assets/img/cool-background.png');
-  } */
+/* Route transitions */
+.route-enter-from {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.route-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.route-leave-active {
+  transition: all 0.3s ease-in;
+}
 </style>

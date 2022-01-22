@@ -1,5 +1,5 @@
 <template>
-  <div class="my-16 rounded-3xl">
+  <div class="calorieBox my-16 rounded-3xl">
   <form @submit.prevent="getBmr" class="grid m-auto w-4/5">
     <div class="flex flex-col items-center justify-center bg-red-500 p-14 rounded-tl-xl rounded-tr-xl shadow-lg">
     <h1 class="text-2xl text-gray-800 font-bold mb-4">Calorie Calculator</h1>
@@ -40,7 +40,15 @@
 
 <script>
 // import { computed } from '@vue/reactivity'
+import gsap from 'gsap'
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
+   mounted: function() {
+    this.calorieScroll();
+    // this.scrollAnimation1();
+  },
   data() { 
     return {
       weight: null,
@@ -90,6 +98,16 @@ export default {
       this.gender = null
       this.activity = null
       this.age = null
+    },
+    calorieScroll() {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: '.calorieBox',
+          start: 'top bottom',
+          end: 'bottom top',
+        }
+      })
+      .from('.calorieBox', { x : innerWidth * -1, opacity: 0, duration: 1.2, ease: "back.out(1.7)"})
     }
   }
 }
