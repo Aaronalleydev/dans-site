@@ -1,4 +1,5 @@
 <template>
+<section>
 <div class="hServicesHeader">
   <h2 class="serviceHeader text-4xl text-center text-red-600 font-bold mt-16 mb-16">How I can help you...</h2>
 </div>
@@ -18,6 +19,7 @@
   </router-link>
 </div>
 </div>
+</section>
 </template>
 
 <script>

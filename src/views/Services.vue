@@ -15,15 +15,15 @@ const { ref }=require('@vue/reactivity')
       {
         title: 'Online Training and Nutrition plan', 
         price: '£99 monthly subscription', 
-        who: ['You have an understanding of the gym and want a customized program to follow to reach your goals. This plan will also help with your nutritional knowledge and goals.', 'Or you have sport specific goals and need a push in the right direction.', 'Or you want a better understanding of different training methods and nutritional information.'], 
-        whatYouGet: ['Weekly Check-ins', 'Bespoke training program', 'Customized calories and macros to hit your goals', 'Free copy of my 7-step nutrition guide', 'Daily/weekly/monthly habit tracking.', 'Access to my training app - MyPTHub', 'Via the app - Workout logging, demonstration videos, nutrition tracking', 'Unlimited messaging support', 'Monthly review', 'Access to my nutrition platform (Extra cost)'],
-        id: 1},
+        who: ['You have an understanding of the gym and want a customised program to follow to reach your goals. This plan will also educate and help with your nutritional and programing knowledge', 'And/Or you have sport specific goals and need a push in the right direction.', 'And/Or you want a better understanding of different training methods and nutritional information.'], 
+        whatYouGet: ['Onboarding call', 'Weekly Check-ins', 'Bespoke training program', 'Customized calories and macros to hit your goals', 'Daily/weekly/monthly habit tracking.', 'Access to my training app - MyPTHub', 'Via the app - Workout logging, demonstration videos, nutrition tracking, Unlimited messaging support', 'Monthly review', 'Access to my nutrition platform (Extra cost)'],
+        },
       { 
         title: '12 week nutrition Plan', 
         price: '£200', 
         who: ["You want to gain a deeper understanding of your nutrition and how it can help you achieve your goals. If you're looking to set habits that will last long term and not just a quick fix diet plan then this is for you."], 
-        whatYouGet: ['12 week bespoke nutrition plan', 'Sample meal plans', ' Daily/weekly/monthly habit tracking.', 'Access to my nutrition app - with access to 100\'s of meals, a weekly meal planner, habit tracker, nutritional information and a live chat function with me.', 'Weekly nutritional information emails', 'Weekly check-ins', 'Monthly reviews', 'Daily messaging support']},
-      
+        whatYouGet: ['Onboarding call', '12 week bespoke nutrition plan', 'Sample meal plans', ' Daily/weekly/monthly habit tracking.', 'Access to my nutrition app - with access to 100\'s of meals, a weekly meal planner, habit tracker, nutritional information and a live chat function with me.', 'Weekly nutritional information emails', 'Weekly check-ins', 'Monthly reviews', 'Daily messaging support']},
+        
     ])
 
     return { cardsData }

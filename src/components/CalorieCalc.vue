@@ -1,8 +1,8 @@
 <template>
-  <div class="calorieBox my-16 rounded-3xl">
+  <section class="calorieBox my-16 rounded-3xl">
   <form @submit.prevent="getBmr" class="grid m-auto w-4/5">
     <div class="flex flex-col items-center justify-center bg-red-500 p-14 rounded-tl-xl rounded-tr-xl shadow-lg">
-    <h1 class="text-2xl text-gray-800 font-bold mb-4">Calorie Calculator</h1>
+    <h2 class="text-2xl text-gray-800 font-bold mb-4">Calorie Calculator</h2>
     <label class="text-gray-800 text-lg font-bold" for="weight">Weight</label>
     <input type="text" class="p-1 m-2 w-full text-center rounded-lg focus:bg-blue-100" required placeholder="Weight(KG)" name="weight" v-model="weight">
     <label class="text-gray-800 text-lg font-bold" for="height">Height</label>
@@ -35,7 +35,7 @@
       <p class="p-2">Daily Calories: <span class="text-2xl text-blue-700 font-bold">{{ daily }}</span></p>
   </div>
   </form>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -5,7 +5,7 @@
     <HomeService />
     <Review />
     <Socials />
-    <h1 class="text-2xl text-center py-6 text-red-600 font-bold">Ready to get started or want to find out more</h1>
+    <h2 class="text-2xl text-center py-6 text-red-600 font-bold">Ready to get started or want to find out more</h2>
     <HomeContact />
     <CalorieCalc />
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="contactBox bg-gray-100 grid md:grid-cols-2 sm:w-4/5 m-auto rounded-lg sm:mb-28">
+  <section class="contactBox bg-gray-100 grid md:grid-cols-2 sm:w-4/5 m-auto rounded-lg sm:mb-28">
   
 
     <form ref="form" class="flex flex-col items-center py-6" @submit.prevent="sendEmail">
@@ -18,16 +18,19 @@
     <input type="tel" placeholder="Phone number (optional)" name="phone" class="lg:w-2/3 text-center rounded-xl m-2 p-1" v-model="phone">
     <label for="enquiry">Enquiry:</label>
     <textarea placeholder="let us know what you are interested in (optional)" class="lg:w-2/3 text-center rounded-xl m-2 p-2" name="message" v-model="message"></textarea>
-    
+    <div>
+    <input type="checkbox" required id="tc" name="tc" class="m-1">
+    <label for="tc">By checking this box you consent to the <router-link :to="{ name: 'TC'}" class="text-blue-400">T+C's</router-link></label>
+    </div>
     <button class="bg-red-600 rounded-full p-2 mt-4 text-white font-bold">Send enquiry</button>
     </form>
     <div class="flex flex-col items-center justify-center">
     <h1 class=" pb-6 md:pb-20 text-xl text-red-600">Or contact:</h1>
     <p class="flex pb-6"><span class="pi pi-phone px-2 md:px-4 text-red-600" style="font-size: 2rem;" ></span> 07818717323</p>
 
-    <p class="flex text-blue-700"><span class="pi pi-at px-4 pb-8 text-xl md:text-3xl text-red-600 pt-1 md:pt-0" style=";" ></span><a href="mailto:dan@alleystrengthandnutrition.com">dan@alleystrengthandnutrition.com</a></p>
+    <p class="flex text-blue-700"><span class="pi pi-at px-4 pb-8 text-xl md:text-3xl text-red-600 pt-1 md:pt-0" style=";" ></span><a href="mailto:daniel@alleystrengthandnutrition.com">daniel@alleystrengthandnutrition.com</a></p>
     </div>
-  </div>
+  </section>
           
 </template>
 
