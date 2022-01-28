@@ -13,11 +13,13 @@
           
           <p class="text1 leading-8 tracking-wide">I truly believe in educating you to understand how to reach your full potential and smash through any goals we have! We will put a flexible training and nutrition plan that will help you enjoy your training, nutrition and life at the same time. Together we will find the right mix of exercise and nutrition to improve your lifestyle.</p> 
           <br>
+          <div class="text1">
           <p>Together we will:</p>
-          <p><b>T</b>ailor plans to suit you and your lifestyle</p>
-          <p><b>E</b>ducate you to give you the tools to smash through your targets beyond any plans</p>
-          <p><b>A</b>nalyse your current lifestyle to help you achieve the best you</p>
-          <p><b>M</b>otivate daily and track habits to push you to the next level</p>
+          <p><b class="text-red-600 text-2xl">T</b>ailor plans to suit you and your lifestyle</p>
+          <p><b class="text-red-600 text-2xl">E</b>ducate you to give you the tools to smash through your targets beyond any plans</p>
+          <p><b class="text-red-600 text-2xl">A</b>nalyse your current lifestyle to help you achieve the best you</p>
+          <p><b class="text-red-600 text-2xl">M</b>otivate daily and track habits to push you to the next level</p>
+          </div>
       </div>
     </div>
   </div>

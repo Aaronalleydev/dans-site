@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import Contact from "../views/Contact.vue";
 import Services from "../views/Services.vue";
 import TC from "../views/TC.vue";
+import PageNotFound from "../views/PageNotFound.vue";
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: "/terms",
     name: "TC",
     component: TC
+  },
+  { 
+    path: '/:pathMatch(.*)*', 
+    name: 'PageNotFound',
+    component: PageNotFound
   }
   
 ];
