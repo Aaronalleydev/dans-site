@@ -1,7 +1,7 @@
 <template>
 <section class="">
   <div class="reviewTitle">
-    <h2 class="reviewT text-center text-3xl text-red-600 py-16 px-2">Still not convinced, check out what my clients are saying...</h2>
+    <h2 class="reviewT text-center text-3xl text-red-600 py-16 px-2">Still not convinced, check out what clients are saying...</h2>
 
   </div>
   

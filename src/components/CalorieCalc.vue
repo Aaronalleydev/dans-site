@@ -3,6 +3,7 @@
   <form @submit.prevent="getBmr" class="grid m-auto w-4/5">
     <div class="flex flex-col items-center justify-center bg-red-500 p-14 rounded-tl-xl rounded-tr-xl shadow-lg">
     <h2 class="text-2xl text-gray-800 font-bold mb-4">Calorie Calculator</h2>
+    <p class="text-lg text-gray-800 pb-4">Want to know how many calories you should be consuming for your current level of activity, fill in the form below</p>
     <label class="text-gray-800 text-lg font-bold" for="weight">Weight</label>
     <input type="text" class="p-1 m-2 w-full text-center rounded-lg focus:bg-blue-100" required placeholder="Weight(KG)" name="weight" v-model="weight">
     <label class="text-gray-800 text-lg font-bold" for="height">Height</label>
@@ -28,12 +29,17 @@
     </select>
     <button class="bg-red-700 text-white text-xl py-3 px-3 rounded-full mt-4">Calculate</button>
     </div>
+    <!-- V-if='bmr' goes in div below -->
     <div v-if="bmr" class="bg-red-400 p-6 text-lg text-gray-800 flex flex-col justify-center rounded-br-xl rounded-bl-xl shadow-lg">
       <p class="p-2">Your BMR(Basal Metabolic Rate) is the amount of calories your body burns daily if you were to do no activity at all.</p>
       <p class="p-2">Your BMR is: <span class="text-2xl text-blue-700 font-bold">{{ bmr }}</span> calories</p>
       <p class="p-2">Your daily calories is the amount of calories needed to maintain your current weight based off your current activity levels</p>
       <p class="p-2">Daily Calories: <span class="text-2xl text-blue-700 font-bold">{{ daily }}</span></p>
+      <div class="p-2">
+        <p>Want to learn how to how to create custom Macro's for your target <router-link :to="{ name: 'Contact'}" class="text-blue-600 font-bold">Click Here</router-link></p>
   </div>
+      </div>
+      
   </form>
   </section>
 </template>
@@ -63,34 +69,34 @@ export default {
   methods: {
     getBmr() {
       if( this.gender == 'male' && this.activity == 'sedentary') {
-        this.bmr = Math.floor(66 + (13.7 * this.weight) + (5 * this.height) - (6.8 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) + 5)
         this.daily = Math.floor(this.bmr * 1.2)
       } else if(this.gender == 'male' && this.activity == 'light'){
-        this.bmr = Math.floor(66 + (13.7 * this.weight) + (5 * this.height) - (6.8 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) + 5)
         this.daily = Math.floor(this.bmr * 1.375)
       } else if(this.gender == 'male' && this.activity == 'moderate'){
-        this.bmr = Math.floor(66 + (13.7 * this.weight) + (5 * this.height) - (6.8 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) + 5)
         this.daily = Math.floor(this.bmr * 1.55)
       } else if(this.gender == 'male' && this.activity == 'very'){
-        this.bmr = Math.floor(66 + (13.7 * this.weight) + (5 * this.height) - (6.8 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) + 5)
         this.daily = Math.floor(this.bmr * 1.725)
       }else if(this.gender == 'male' && this.activity == 'extra'){
-        this.bmr = Math.floor(66 + (13.7 * this.weight) + (5 * this.height) - (6.8 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) + 5)
         this.daily = Math.floor(this.bmr * 1.9)
       } else if (this.gender == 'female' && this.activity == 'sedentary') {
-        this.bmr = Math.floor(655 + (9.6 * this.weight) + (1.8 * this.height) - (4.7 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) - 161)
         this.daily = Math.floor(this.bmr * 1.2)
       } else if (this.gender == 'female' && this.activity == 'light') {
-        this.bmr = Math.floor(655 + (9.6 * this.weight) + (1.8 * this.height) - (4.7 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) - 161)
         this.daily = Math.floor(this.bmr * 1.375)
       } else if (this.gender == 'female' && this.activity == 'moderate') {
-        this.bmr = Math.floor(655 + (9.6 * this.weight) + (1.8 * this.height) - (4.7 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) - 161)
         this.daily = Math.floor(this.bmr * 1.55)
       } else if (this.gender == 'female' && this.activity == 'very') {
-        this.bmr = Math.floor(655 + (9.6 * this.weight) + (1.8 * this.height) - (4.7 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) - 161)
         this.daily = Math.floor(this.bmr * 1.725)
       } else if (this.gender == 'female' && this.activity == 'extra') {
-        this.bmr = Math.floor(655 + (9.6 * this.weight) + (1.8 * this.height) - (4.7 * this.age))
+        this.bmr = Math.floor((10 * this.weight) + (6.25 * this.height) - (5 * this.age) - 161)
         this.daily = Math.floor(this.bmr * 1.9)
       }
       this.weight = null
