@@ -1,7 +1,7 @@
 <template>
   <h1 class="text-4xl text-red-600 font-bold text-center">Our plans</h1>
-  <p class="text-gray-800 text-lg text-center leading-8 tracking-wide px-4 py-4">These plans have been created to enable you to reach your fitness and nutrition goals whatever they may be. Whether you are training for an event and want to get that extra couple % to perform at your best on the day, you take part in ongoing sports that require you to be at your peak all the time of if you just want to feel better and fitter in yourself on a day-to-day basis.</p>
-  <p class="text-gray-800 text-lg text-center leading-8 tracking-wide">If you're looking for something that's not covered in the plans please contact me using the contact page and we can have a chat about what I can do for you.</p>
+  <p class="text-gray-800 text-lg text-center leading-8 tracking-wide px-4 py-4">These plans have been created to enable you to reach your fitness and nutrition goals whatever they may be. Whether you are training for an event and want to get that extra couple % to perform at your best on the day, you take part in ongoing sports that require you to be at your peak all the time or if you just want to feel better and fitter in yourself on a day-to-day basis.</p>
+  <p class="text-gray-800 text-lg text-center leading-8 tracking-wide">If you're looking for something that's not covered in the plans please contact me using the contact page and we can have a chat about what we can do for you.</p>
   <ServiceCard :cardsData="cardsData"/>
 </template>
 

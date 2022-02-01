@@ -4,6 +4,7 @@
     <div class="flex flex-col items-center justify-center bg-red-500 p-14 rounded-tl-xl rounded-tr-xl shadow-lg">
     <h2 class="text-2xl text-gray-800 font-bold mb-4">Calorie Calculator</h2>
     <p class="text-lg text-gray-800 pb-4">Want to know how many calories you should be consuming for your current level of activity, fill in the form below</p>
+    <p class="text-sm pb-2 text-gray-800">(based on the Mifflin St Jeor calculation) </p>
     <label class="text-gray-800 text-lg font-bold" for="weight">Weight</label>
     <input type="text" class="p-1 m-2 w-full text-center rounded-lg focus:bg-blue-100" required placeholder="Weight(KG)" name="weight" v-model="weight">
     <label class="text-gray-800 text-lg font-bold" for="height">Height</label>
@@ -12,14 +13,14 @@
     <input type="text" class="p-1 m-2 w-full text-center rounded-lg focus:bg-blue-100" required placeholder="Age" name="age" v-model="age">
 
     <label class="text-gray text-lg font-bold" for="gender">Gender</label>
-    <select class="bg-white p-1 m-2 w-full text-center rounded-lg focus:bg-blue-100" name="gender" id="gender" v-model="gender">
+    <select class="bg-white p-1 m-2 w-full text-center rounded-lg focus:bg-blue-100" name="gender" id="gender" v-model="gender" required>
       <option value="disabled" disabled>Gender</option>
       <option value="male">Male</option>
       <option value="female">Female</option>
     </select>
 
     <label class="text-gray-800 text-lg font-bold" for="activity">Activity Level</label>
-    <select class="bg-white p-1 m-2 w-full text-center rounded-lg focus:bg-blue-100" name="acitivity" id="activity" v-model="activity">
+    <select class="bg-white p-1 m-2 w-full text-center rounded-lg focus:bg-blue-100" name="acitivity" id="activity" v-model="activity" required>
       <option value="disabled" disabled>Activity</option>
       <option value="sedentary">Sedentary(little or no weekly excercise)</option>
       <option value="light">Light activity(1-3 days a week)</option>
@@ -36,7 +37,7 @@
       <p class="p-2">Your daily calories is the amount of calories needed to maintain your current weight based off your current activity levels</p>
       <p class="p-2">Daily Calories: <span class="text-2xl text-blue-700 font-bold">{{ daily }}</span></p>
       <div class="p-2">
-        <p>Want to learn how to how to create custom Macro's for your target <router-link :to="{ name: 'Contact'}" class="text-blue-600 font-bold">Click Here</router-link></p>
+        <p>Want to learn how to create custom Macro's for your target? <router-link :to="{ name: 'Contact'}" class="text-blue-600 font-bold">Click Here</router-link></p>
   </div>
       </div>
       

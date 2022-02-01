@@ -1,10 +1,10 @@
 <template>
-  <section class="contactBox bg-gray-100 grid md:grid-cols-2 sm:w-4/5 m-auto rounded-lg sm:mb-28">
+  <section class="contactBox bg-gray-100 grid md:grid-cols-2 sm:w-4/5 m-auto rounded-lg sm:mb-28 text-gray-800">
   
 
     <form ref="form" class="flex flex-col items-center py-6" @submit.prevent="sendEmail">
       <div v-if="success" class="bg-black opacity-40 text-green-500 text-lg p-2 rounded-lg">
-       <h3>Success! your message has been sent and Dan will be in contact soon</h3>
+       <h3>Success! your message has been sent and Dan will be in contact within 24-48 hours</h3>
       </div>
       <div v-if="error">
         <h3>Phone not long enough</h3>
@@ -26,6 +26,7 @@
     </form>
     <div class="flex flex-col items-center justify-center">
     <h1 class=" pb-6 md:pb-20 text-xl text-red-600">Or contact:</h1>
+    <p class="text-gray-800 text-lg pb-2">Phone, text or WhatsApp</p>
     <p class="flex pb-6"><span class="pi pi-phone px-2 md:px-4 text-red-600" style="font-size: 2rem;" ></span> 07818717323</p>
 
     <p class="flex text-blue-700"><span class="pi pi-at px-4 pb-8 text-xl md:text-3xl text-red-600 pt-1 md:pt-0" style=";" ></span><a href="mailto:daniel@alleystrengthandnutrition.com">daniel@alleystrengthandnutrition.com</a></p>
