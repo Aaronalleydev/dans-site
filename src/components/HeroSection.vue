@@ -39,13 +39,13 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
     setup() {
     const beforeEnter = (el) => {
-        console.log('before enter - set initial state')
+        
         el.style.transform = 'translateY(-120px)'
         el.style.opacity = 0
     } 
 
     const enter = (el) => {
-        console.log('starting to enter - make transition')
+        
         gsap.to(el, {
             duration: 1,
             y: 0,
